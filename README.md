@@ -1,3 +1,11 @@
+# Como usar o programa
+1. Compile o programa: gcc xadrez.c -o xadrez
+2. Execute o programa: ./xadrez
+3. Digite o número correspondente a peça de que deseja mover
+4. Digite o número correspondente a direção que deseja mover a peça
+5. Digite o número correspondente a quantas casas deseja mover a peça naquela direção(Caso essa peça não seja o cavalo).
+6. Assim que o resultado for imprimido na tela, digite o 1 para continuar jogando e 2 para sair.
+
 # ⚠️ Importante!!!
 Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
 
