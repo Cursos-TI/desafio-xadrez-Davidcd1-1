@@ -62,7 +62,7 @@ int main() {
         // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
             case 3:
                 // Pedindo a direção e o número de casas que o usuário deseja mover a peça
-                printf("\nPara qual direcao deseja mover a Rainha?\n1. Esquerda\n2. Direita\n3. Cima\n4. Baixo\n>> ");
+                printf("\nPara qual direcao deseja mover a Rainha?\n1. Esquerda\n2. Direita\n3. Cima\n4. Baixo\n5. Esquerda Ascendente\n6. Direita Ascendente\n7. Esquerda Descendente\n8. Direita Descendente\n>> ");
                 scanf("%d", &direcao);
                 printf("Quantas casas deseja mover a Rainha? (Max. 8)\n>> ");
                 scanf("%d", &casas);
