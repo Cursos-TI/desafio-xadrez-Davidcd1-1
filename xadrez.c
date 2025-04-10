@@ -3,7 +3,7 @@
 // Desafio de Xadrez - MateCheck
 
 void bispo(int direcao, int casas);
-void cavalo(int direcao, int casas);
+void cavalo(int direcao);
 void rainha(int direcao, int casas);
 void torre(int direcao, int casas);
 
@@ -42,7 +42,10 @@ int main() {
                 scanf("%d", &casas);
                 printf("\n");
 
-                bispo(direcao, casas);
+                if(casas <= 5)
+                    bispo(direcao, casas);
+                else
+                    bispo(direcao, 1);
                 break;
             
         // Implementação de Movimentação da Torre
@@ -55,7 +58,10 @@ int main() {
                 scanf("%d", &casas);
                 printf("\n");
 
-                torre(direcao, casas);
+                if(casas <= 5)
+                    torre(direcao, casas);
+                else
+                    torre(direcao, 1);
                 break;
 
         // Implementação de Movimentação da Rainha
@@ -68,7 +74,10 @@ int main() {
                 scanf("%d", &casas);
                 printf("\n");
 
-                rainha(direcao, casas);
+                if(casas <= 8)
+                    rainha(direcao, casas);
+                else
+                    rainha(direcao, 1);
                 break;
         
         // Nível Aventureiro - Movimentação do Cavalo
@@ -79,7 +88,7 @@ int main() {
                 printf("Para qual direcao deseja mover o Cavalo?\n1. Esquerda Ascendente\n2. Direita Ascendente\n3. Esquerda Descendente\n4. Direita Descendente\n>> ");
                 scanf("%d", &direcao);
                 printf("\n");
-                cavalo(direcao, casas);
+                cavalo(direcao);
             default:
                 break;
         }
@@ -123,7 +132,7 @@ void bispo(int direcao, int casas){
 }
 
 // Responsável pelo movimento do cavalo
-void cavalo(int direcao, int casas){
+void cavalo(int direcao){
     int mov_com = 1;
     while(mov_com--){
         switch(direcao){
